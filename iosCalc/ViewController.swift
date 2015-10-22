@@ -116,24 +116,15 @@ class ViewController: UIViewController {
                 
                 result = result / Double(nums.count)
                 
-            case "fact":
+            /*case "fact":
                 
-                if nums.count != 1{
+                    var number = convertDouble(nums[0])
                     
-                    res = "Please enter ONE number for fact."
+                    //if round(number) != number{
                     
-                } else{
-                    
-                    var number = Int(convertDouble(nums[0]))
-                    
-                    if number < 0{
+                    if number == 0.0{
                         
                         res = "Please enter a non-negative number for fact."
-                        
-                    } else if number == 0
-                        
-                    {
-                        res = "0"
                         
                     } else{
                         
@@ -145,7 +136,9 @@ class ViewController: UIViewController {
                         }
                         res = String(result)
                     }
-                }
+                    
+                //}
+                print(number)*/
 
                 
             default:
@@ -162,9 +155,22 @@ class ViewController: UIViewController {
         
         exp = "fact"
         
-        screen.text = calc(nums, exp: "fact")
+        var number = Int(convertDouble(nums[nums.count-1]))
         
-            }
+        if number < 0{
+            
+            screen.text = "Please enter a non-negative number."
+            
+        } else if number == 0{
+            
+            screen.text = "0"
+            
+        } else{
+        
+        screen.text = String(fact(number))
+        }
+    }
+    
     @IBAction func pushAvg(sender: AnyObject) {
         
         exp = "avg"
@@ -183,6 +189,26 @@ class ViewController: UIViewController {
         
         nums = [""]
         
+    }
+    
+    func fact(number:Int) -> Int{
+        
+        var result:Int = 1
+        
+        if number == 0{
+            
+            result = 0
+            
+        } else{
+        
+        for index in 1...number{
+            
+            result = result * index
+            
+        }
+        }
+        
+        return result
     }
     
     @IBAction func pushPlus(sender: AnyObject) {
