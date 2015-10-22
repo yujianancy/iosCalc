@@ -45,6 +45,8 @@ class ViewController: UIViewController {
     
     var exp:String = "+"
     
+    var RPN:Bool = false
+    
     func convertDouble(incoming:String) -> Double {
         
         return NSNumberFormatter().numberFromString(incoming)!.doubleValue
@@ -116,40 +118,39 @@ class ViewController: UIViewController {
                 
                 result = result / Double(nums.count)
                 
-            /*case "fact":
-                
-                    var number = convertDouble(nums[0])
-                    
-                    //if round(number) != number{
-                    
-                    if number == 0.0{
-                        
-                        res = "Please enter a non-negative number for fact."
-                        
-                    } else{
-                        
-                        var result:Int = 1
-                        
-                        for index in 1...number{
-                            
-                            result = result * index
-                        }
-                        res = String(result)
-                    }
-                    
-                //}
-                print(number)*/
-
-                
             default:
                 
                 result = 0.0
             }
         
-        
         res = String(stringInterpolationSegment: result)
         
         return res
+    }
+    @IBAction func pushRPN(sender: AnyObject) {
+        
+        RPN = !RPN
+        
+        if RPN{
+        
+        screen.text = "Entered RPN mode."
+            
+        } else{
+            
+            screen.text = "Entered traditional mode."
+        }
+        
+        nums = [""]
+        
+    }
+    @IBAction func pushEnter(sender: AnyObject) {
+        
+        if RPN{
+            
+            nums.append("")
+            
+        }
+    
     }
     @IBAction func pushFact(sender: AnyObject) {
         
@@ -175,13 +176,29 @@ class ViewController: UIViewController {
         
         exp = "avg"
         
+        if RPN{
+            
+            screen.text = calc(nums, exp: exp)
+            
+        } else{
+        
         screen.text = exp
+            
+        }
     }
     @IBAction func pushCount(sender: AnyObject) {
         
         exp = "count"
         
-        screen.text = exp
+        if RPN{
+            
+            screen.text = calc(nums, exp: exp)
+            
+        } else{
+            
+            screen.text = exp
+            
+        }
     }
     @IBAction func pushEqual(sender: AnyObject) {
         
@@ -215,7 +232,15 @@ class ViewController: UIViewController {
         
         exp = "+"
         
-        screen.text = exp
+        if RPN{
+            
+            screen.text = calc(nums, exp: exp)
+            
+        } else{
+            
+            screen.text = exp
+            
+        }
         
     }
     @IBAction func pushSub(sender: AnyObject) {
@@ -230,28 +255,60 @@ class ViewController: UIViewController {
             
             exp = "-"
             
-            screen.text = exp
+            if RPN{
+                
+                screen.text = calc(nums, exp: exp)
+                
+            } else{
+                
+                screen.text = exp
+                
+            }
         }
     }
     @IBAction func pushDiv(sender: AnyObject) {
         
         exp = "/"
         
-        screen.text = exp
+        if RPN{
+            
+            screen.text = calc(nums, exp: exp)
+            
+        } else{
+            
+            screen.text = exp
+            
+        }
         
     }
     @IBAction func pushMul(sender: AnyObject) {
         
         exp = "*"
         
-        screen.text = exp
+        if RPN{
+            
+            screen.text = calc(nums, exp: exp)
+            
+        } else{
+            
+            screen.text = exp
+            
+        }
         
     }
     @IBAction func pushMod(sender: AnyObject) {
         
         exp = "mod"
         
-        screen.text = exp
+        if RPN{
+            
+            screen.text = calc(nums, exp: exp)
+            
+        } else{
+            
+            screen.text = exp
+            
+        }
     }
     @IBAction func pushZero(sender: AnyObject) {
         

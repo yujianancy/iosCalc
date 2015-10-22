@@ -10,27 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iosCalc/ViewController.swift"
-            timestampString = "467247495.566501"
+            timestampString = "467250516.273741"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "150"
-            endingLineNumber = "150"
-            landmarkName = "calc(_:exp:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "iosCalc/ViewController.swift"
-            timestampString = "467247204.536504"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "133"
-            endingLineNumber = "133"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
             landmarkName = "calc(_:exp:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -42,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iosCalc/ViewController.swift"
-            timestampString = "467248427.496646"
+            timestampString = "467250516.273741"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "211"
-            endingLineNumber = "211"
+            startingLineNumber = "228"
+            endingLineNumber = "228"
             landmarkName = "fact(_:)"
             landmarkType = "5">
          </BreakpointContent>
