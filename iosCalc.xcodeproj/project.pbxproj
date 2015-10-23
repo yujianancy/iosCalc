@@ -156,6 +156,8 @@
 		9D41DDFF1BD842740064641F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0710;
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Jia Yu";
 				TargetAttributes = {
@@ -411,6 +413,7 @@
 				9D41DE281BD842740064641F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9D41DE291BD842740064641F /* Build configuration list for PBXNativeTarget "iosCalcTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +422,7 @@
 				9D41DE2B1BD842740064641F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -156,7 +156,7 @@ class ViewController: UIViewController {
         
         exp = "fact"
         
-        var number = Int(convertDouble(nums[nums.count-1]))
+        let number = Int(convertDouble(nums[nums.count-1]))
         
         if number < 0{
             
@@ -312,7 +312,7 @@ class ViewController: UIViewController {
     }
     @IBAction func pushZero(sender: AnyObject) {
         
-        if screen.text != exp {
+        if screen.text != exp || screen.text == ""{
         
         nums[nums.count-1] = nums[nums.count-1] + "0"
             
@@ -325,7 +325,7 @@ class ViewController: UIViewController {
     }
     @IBAction func pushDot(sender: AnyObject) {
         
-        if screen.text != exp {
+        if screen.text != exp || screen.text == ""{
             
             nums[nums.count-1] = nums[nums.count-1] + "."
             
@@ -339,7 +339,7 @@ class ViewController: UIViewController {
     }
     @IBAction func pushOne(sender: AnyObject) {
         
-        if screen.text != exp {
+        if screen.text != exp || screen.text == ""{
             
             nums[nums.count-1] = nums[nums.count-1] + "1"
             
@@ -353,7 +353,7 @@ class ViewController: UIViewController {
     }
     @IBAction func pushTwo(sender: AnyObject) {
         
-        if screen.text != exp {
+        if screen.text != exp || screen.text == ""{
             
             nums[nums.count-1] = nums[nums.count-1] + "2"
             
@@ -366,7 +366,7 @@ class ViewController: UIViewController {
     }
     @IBAction func pushThree(sender: AnyObject) {
         
-        if screen.text != exp {
+        if screen.text != exp || screen.text == ""{
             
             nums[nums.count-1] = nums[nums.count-1] + "3"
             
@@ -380,7 +380,7 @@ class ViewController: UIViewController {
     }
     @IBAction func pushFour(sender: AnyObject) {
         
-        if screen.text != exp {
+        if screen.text != exp || screen.text == ""{
             
             nums[nums.count-1] = nums[nums.count-1] + "4"
             
@@ -394,7 +394,7 @@ class ViewController: UIViewController {
     }
     @IBAction func pushFive(sender: AnyObject) {
         
-        if screen.text != exp {
+        if screen.text != exp || screen.text == ""{
             
             nums[nums.count-1] = nums[nums.count-1] + "5"
             
@@ -408,7 +408,7 @@ class ViewController: UIViewController {
     }
     @IBAction func pushSix(sender: AnyObject) {
         
-        if screen.text != exp {
+        if screen.text != exp || screen.text == ""{
             
             nums[nums.count-1] = nums[nums.count-1] + "6"
             
@@ -422,7 +422,7 @@ class ViewController: UIViewController {
     }
     @IBAction func pushSeven(sender: AnyObject) {
         
-        if screen.text != exp {
+        if screen.text != exp || screen.text == ""{
             
             nums[nums.count-1] = nums[nums.count-1] + "7"
             
@@ -436,7 +436,7 @@ class ViewController: UIViewController {
     }
     @IBAction func pushEight(sender: AnyObject) {
         
-        if screen.text != exp {
+        if screen.text != exp || screen.text == ""{
             
             nums[nums.count-1] = nums[nums.count-1] + "8"
             
@@ -449,7 +449,7 @@ class ViewController: UIViewController {
     }
     @IBAction func pushNine(sender: AnyObject) {
         
-        if screen.text != exp {
+        if screen.text != exp || screen.text == ""{
             
             nums[nums.count-1] = nums[nums.count-1] + "9"
             
